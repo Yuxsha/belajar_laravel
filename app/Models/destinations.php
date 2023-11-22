@@ -11,5 +11,6 @@ class destinations extends Model
 
     public $timestamps = false;
     protected $table = 'destinations';
-    protected $
+    protected $primarykey = "id";
+    protected $guarded = ["id"];
 }

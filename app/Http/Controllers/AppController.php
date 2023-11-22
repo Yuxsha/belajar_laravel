@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\destinations;
+
 use Illuminate\Http\Request;
 
 class AppController extends Controller
@@ -16,9 +18,4 @@ class AppController extends Controller
     public function kontak() {
         return view("kontak");
     }
-    public function data_destination() {
-        return view("data_destination");
-    }
-    
-
 }

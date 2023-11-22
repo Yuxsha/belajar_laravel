@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\ApController;
+use App\Http\Controllers\AppController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,6 @@ Route::get('home', [AppController::class,"home"]);
 Route::get("template", function() {
     return view('template'); 
 });
-Route::get("/",[AppController::class,"home"]);
 
 
 
