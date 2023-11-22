@@ -10,6 +10,7 @@ class destinations extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $table = 'destinations';
-    protected $
+    protected $table = "destinations";
+    protected $primarykey = "id";
+    protected $foreignkey = ["id"];
 }
