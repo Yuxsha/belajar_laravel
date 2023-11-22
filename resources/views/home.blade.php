@@ -1,3 +1,9 @@
-<div>
-    <!-- Do what you can, with what you have, where you are. - Theodore Roosevelt -->
-</div>
+@extends("template")
+
+@section("title")
+Home
+@endsection
+
+@section("content")
+
+@endsection
