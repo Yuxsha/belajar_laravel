@@ -27,6 +27,23 @@ Data
         <?php
         $no = 0;
         ?>
-        @foreach()
+        @foreach($destinations as $data)
+        <?php $no++; ?>
+        <tr>
+            <td class="text-center">{{ $no }}</td>
+            <td class="text-center">{{ $data->id }}</td>
+            <td class="text-center">{{ $data->name }}</td>
+            <td class="text-center">{{ $data->location }}</td>
+            <td class="text-center">{{ $data->details }}</td>
+            <td class="text-center">{{ $data->day_open }},{{ $data->time_open }}</td>
+            <td class="text-center">{{ $data->price }}</td>
+            <td class="text-center">
+                <a href="#" class="btn btn-success btn-sm">Edit</a>
+                <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+            </td>
+        </tr>
+        @endforeach
     </tbody>
 </table>
+
+@endsection

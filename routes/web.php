@@ -15,10 +15,18 @@ use App\Http\Controllers\AppController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('home', [AppController::class,"home"]);
+Route::get("template", function() {
+    return view('template'); 
 });
-Route::get("home",[AppController::class,"home"]);
+Route::get("profile",[AppController::class,"profile"]);
+Route::get("contact",[AppController::class,"contact"]);
+Route::get("data",[AppController::class,"data"]);
 
+Route::get("tambah",[AppController::class,"tambah"]);
+Route::post("tambah",[AppController::class,"tambah"]);
 
+Route::get("data/{id}/edit",[AppController::class,"edit"]);
+Route::get("edit",[AppController::class,"proses_edit_destinations"]);
 
+Route::get("data/{id}/hapus",[AppController::class,"hapus"]);
