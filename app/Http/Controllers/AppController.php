@@ -8,84 +8,78 @@ use Illuminate\Http\Request;
 
 class AppController extends Controller
 {
-    //
-    public function home() {
+    public function home(){
         return view("home");
     }
-    public function profile() {
+    public function profile(){
         return view("profile");
     }
-    public function contact() {
+    public function contact(){
         return view("contact");
     }
-    public function data() {
-        return view("data");
+    public function data_destinations(){
+        $destinations = destinations::get();
+        $data = ([
+            "destinations" => $destinations,
+        ]);
+        return view("data_destinations",$data);
     }
-    public function tambah_destinations() {
-        return view("tambah_destinations");
+    public function hapus_destinations($id){
+        destinations::where("id",$id)->delete();
+        return redirect("data-destinations");
     }
-    public function proses_tambah_destinations() {
-        $id = $request->nip;
-        $name = $request->name;
-        $location = $request->location;
-        $details = $request->details;
-        $day_open = $request->day_open;
-        $time_open = $request->time_open;
-        $price = $request->price;
+    public function form_tambah(){
+        return view("form_tambah");
+    }
+    public function proses_tambah_destinations(Request $request){
+        $name = $request -> name;
+        $location = $request -> location;
+        $details = $request -> details;
+        $day_open = $request -> day_open;
+        $time_open = $request -> time_open;
+        $price = $request -> price;
 
-        Destinations::create([
-            "id" => $id,
+        destinations::create([
             "name" => $name,
             "location" => $location,
             "details" => $details,
-            "day_open" => $day,
+            "day_open" => $day_open,
             "time_open" => $time_open,
             "price" => $price
         ]);
-
-        session()->flash("pesan","Data Berhasil Ditambah");
-
-        return redirect ('data');
+        session()->flash("pesan","Data ".$name." berhasil ditambah.");
+        return redirect("data-destinations");
     }
-    public function edit($id){
-        $destinations = Destinations::where("id",$id)->first();
-
+    public function edit_destinations($id){
+        $destinations = destinations::where("id",$id)->first();
         if(!$destinations){
             abort(404);
         }
-
         $data = ([
             "destinations" => $destinations
         ]);
-
-        return view("edit",$data);
+        return view("edit_destinations",$data);
     }
-    public function proses_edit_destinations() {
-        $id = $request->nip;
-        $name = $request->name;
-        $location = $request->location;
-        $details = $request->details;
-        $day_open = $request->day_open;
-        $time_open = $request->time_open;
-        $price = $request->price;
+    public function proses_edit_destinations(Request $request){
+        $id = $request -> id;
+        $name = $request -> name;
+        $location = $request -> location;
+        $details = $request -> details;
+        $day_open = $request -> day_open;
+        $time_open = $request -> time_open;
+        $price = $request -> price;
 
-        Destinations::where("id",$id)->update([
-            "id" => $id,
+        destinations::where("id",$id)->update([
             "name" => $name,
             "location" => $location,
             "details" => $details,
-            "day_open" => $day,
+            "day_open" => $day_open,
             "time_open" => $time_open,
             "price" => $price
         ]);
-
-        session()->flash("pesan","Data Berhasil Diubah");
-
-        return redirect ("data/".$id."/edit");
-    }
-    public function hapus($id){
-        Destinations::where("id",$id)->delete();
-        return redirect("hapus");
+        session()->flash("pesan","Data ".$name." berhasil diubah.");
+        return redirect("data-destinations/".$id."/edit");
     }
 }
+
 

@@ -73,9 +73,8 @@
         .footer-20192 .cta h3 {
         font-size: 20px; 
         }
-
 </style>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#">DuaR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" 
@@ -94,7 +93,7 @@
                             <a class="nav-link" href="{{ url('contact') }}">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('data') }}">Data</a>
+                            <a class="nav-link" href="{{ url('data-destinations') }}">Data</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -111,23 +110,27 @@
                 </div>
     </div>
 </nav>
-    <div class="container1 mt-5">
+    <div class="container mt-4">
+        <h1>
+            @yield("title")
+        </h1><hr>
         @if(session()->has("pesan"))
         <div class="alert alert-info">
             {{ session("pesan") }}
         </div>
         @endif
+        @yield("content1")
     </div>
     @yield("content")
-    <footer class="footer-20192">
+    <footer class="footer-20192 footer-fixed-bottom">
         <div class="site-section">
             <div class="container">
             <div class="row">
 
                 <div class="col-sm">
-                <a href="#" class="footer-logo">Colorlib</a>
+                <a href="#" class="footer-logo">DuaR</a>
                 <p class="copyright">
-                    <small>&copy; 2019</small>
+                    <small>Copyright &copy;DuaR. All Right Reserved. </small>
                 </p>
                 </div>
                 <div class="col-sm">
@@ -152,17 +155,6 @@
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
                 </div>
-                <div class="col-md-3">
-                <h3>Follow us</h3>
-                <ul class="list-unstyled social">
-                    <li><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li><a href="#"><span class="icon-twitter"></span></a></li>
-                    <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                    <li><a href="#"><span class="icon-medium"></span></a></li>
-                    <li><a href="#"><span class="icon-paper-plane"></span></a></li>
-                </ul>
-                </div>
-                
             </div>
             </div>
         </div>

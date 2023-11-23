@@ -21,10 +21,14 @@ Route::get("template", function() {
     return view('template'); 
 });
 
-Route::get("tambah",[AppController::class,"tambah"]);
-Route::post("tambah",[AppController::class,"tambah"]);
+Route::get('profile',[AppController::class,"profile"]);
+Route::get('contact',[AppController::class,"contact"]);
 
-Route::get("data/{id}/edit",[AppController::class,"edit"]);
-Route::get("edit",[AppController::class,"proses_edit_destinations"]);
+Route::get('data-destinations', [AppController::class,"data_destinations"]);
 
-Route::get("data/{id}/hapus",[AppController::class,"hapus"]);
+Route::get("data-destinations/{id}/hapus",[AppController::class,"hapus_destinations"]);
+Route::get("form-tambah",[AppController::class,"form_tambah"]);
+Route::post("tambah-destinations",[AppController::class,"proses_tambah_destinations"]);
+Route::get("data-destinations/{id}/edit",[AppController::class,"edit_destinations"]);
+Route::get("edit-destinations",[AppController::class,"proses_edit_destinations"]);
+

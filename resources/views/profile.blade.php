@@ -6,9 +6,9 @@ Profile
 
 @section("content")
 <div class="row ms-5">
-    <div class="col-5">
+    <div class="col-3">
         <div class="card shadow mt-5 ms-5" >
-            <img src="{{ url('assets/bali.jpg') }}"  class="image card-img-top" alt="">
+            <img src="{{ url('assets/sigma-male.jpg') }}"  class="image card-img-top" alt="">
             <div class="card-header">
                 <div class="body">
                     <p class="">
@@ -19,9 +19,9 @@ Profile
             </div>
         </div>
     </div>
-    <div class="col-5">
+    <div class="col-4">
         <div class="card shadow float-end mt-5 ms-5 mb-5">
-            <img src="{{ url('assets/bali.jpg') }}" class="image card-img-top" alt="">
+            <img src="{{ url('assets/no-picture-profile.jpg') }}" class="image card-img-top" alt="">
             <div class="card-header">
                 <div class="body">
                     <p class="">
