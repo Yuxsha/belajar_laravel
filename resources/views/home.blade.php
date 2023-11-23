@@ -5,32 +5,43 @@ Home
 @endsection
 
 @section("content")
+<head>
+    <link rel="icon" href="{{ url('assets/home.png') }}">
+</head>
 <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
         <img src="{{ url('assets/prambanan.jpg') }}" class="img d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h1>Tempat wisata</h1>
+            <h1 class="text-center">Tempat wisata</h1>
             <h5>Candi Prambanan</h5>
         </div>
         </div>
         <div class="carousel-item">
         <img src="{{ url('assets/keraton.jpg') }}" class="img d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h1>Tempat wisata</h1>
+            <h1 class="text-center">Tempat wisata</h1>
             <h5>Keraton kasepuhan Cirebon</h5>
         </div>
         </div>
         <div class="carousel-item">
         <img src="{{ url('assets/bali.jpg') }}" class="img d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h1>Tempat wisata</h1>
+            <h1 class="text-center">Tempat wisata</h1>
             <h5>Pulau Dewata Bali</h5>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="{{ url('assets/borobudur.jpeg') }}" class="img d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-center">Tempat wisata</h1>
+            <h5>Candi Borobudur</h5>
         </div>
         </div>
     </div>

@@ -12,10 +12,10 @@ class AppController extends Controller
     public function home() {
         return view("home");
     }
-    public function profil() {
-        return view("profil");
+    public function profile() {
+        return view("profile");
     }
-    public function kontak() {
-        return view("kontak");
+    public function contact() {
+        return view("contact");
     }
 }

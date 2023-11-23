@@ -16,8 +16,13 @@ use App\Http\Controllers\AppController;
 */
 
 Route::get('home', [AppController::class,"home"]);
+
 Route::get("template", function() {
     return view('template'); 
+});
+
+Route::get("profile",function(){
+    return view('profile');
 });
 
 
