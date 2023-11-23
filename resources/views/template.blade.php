@@ -14,20 +14,6 @@
         border-radius: 10px;
         }
     </style>
-    <ul class="nav mt-2 mb-2 ms-2">
-        <li class="nav-item">
-            <a href="{{ url('home') }}" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ url('profil') }}" class="nav-link">Profil</a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ url('kontak') }}" class="nav-link">Kontak</a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ url('data') }}" class="nav-link">Data</a>
-        </li>
-    </ul><br>
     <div class="container">
         <h1>@yield("title")</h1>
         <hr>
