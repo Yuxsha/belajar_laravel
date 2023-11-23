@@ -21,9 +21,10 @@ Route::get("template", function() {
     return view('template'); 
 });
 
-Route::get("profile",function(){
-    return view('profile');
-});
+Route::get("tambah",[AppController::class,"tambah"]);
+Route::post("tambah",[AppController::class,"tambah"]);
 
+Route::get("data/{id}/edit",[AppController::class,"edit"]);
+Route::get("edit",[AppController::class,"proses_edit_destinations"]);
 
-
+Route::get("data/{id}/hapus",[AppController::class,"hapus"]);

@@ -16,8 +16,8 @@ return new class extends Migration
             $table->String("name",255);
             $table->String("location",255);
             $table->longtext("details");
-            $table->String("day-open",100);
-            $table->String("time-open",100);
+            $table->String("day_open",100);
+            $table->String("time_open",100);
             $table->String("price",10);
         });
     }
