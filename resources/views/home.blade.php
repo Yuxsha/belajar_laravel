@@ -12,6 +12,8 @@ Home
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -43,10 +45,17 @@ Home
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ url('assets/.jpg') }}" class="img d-block w-100" alt="...">
+            <img src="{{ url('assets/monas.jpg') }}" class="img d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-center">Tempat wisata</h1>
-                <h5></h5>
+                <h5>Monumen Monas</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url('assets/floating-market.jpg') }}" class="img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-center">Tempat wisata</h1>
+                <h5>Floating Market Lembang Monas</h5>
             </div>
         </div>
     </div>
