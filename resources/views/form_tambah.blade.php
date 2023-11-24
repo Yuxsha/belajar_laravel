@@ -1,11 +1,11 @@
-@extends("template")
+@extends("template2")
 
 @section("title")
 Add destinations form
 @endsection
 
 @section("content1")
-    <form action="{{ url('tambah-destinations') }}" method="post" class="form m-5 p-5">
+    <form action="{{ url('tambah-destinations') }}" method="post" class="form my-3 ms-4 mb-5 pb-5">
         @csrf
         <div class="form-label">
             <label for="id">

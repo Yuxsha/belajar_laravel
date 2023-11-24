@@ -5,9 +5,6 @@ Home
 @endsection
 
 @section("content")
-<head>
-    <link rel="icon" href="{{ url('assets/home.png') }}">
-</head>
 <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">

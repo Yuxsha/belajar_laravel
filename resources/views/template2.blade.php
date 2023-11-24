@@ -90,7 +90,7 @@
                             <a class="nav-link" href="{{ url('profile') }}">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="{{ url('contact') }}">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('data-destinations') }}">Data</a>
@@ -110,11 +110,19 @@
                 </div>
     </div>
 </nav>
-    <div class="container">
+    <div class="container mt-4">
+        <h1>
+            @yield("title")
+        </h1><hr>
+        @if(session()->has("pesan"))
+        <div class="alert alert-info">
+            {{ session("pesan") }}
+        </div>
+        @endif
+        @yield("content1")
     </div>
     @yield("content")
-
-    <footer class="footer-20192 fixed">
+    <footer class="footer-20192 footer-fixed-bottom">
         <div class="site-section">
             <div class="container">
             <div class="row">
