@@ -5,14 +5,14 @@ Profile
 @endsection
 
 @section("content")
-<div class="row m-5">
+<div class="row">
     <div class="col-3">
         <div class="card shadow m-5" >
-            <img src="{{ url('assets/sigma-male.jpg') }}"  class="image card-img-top" alt="">
+            <img src="{{ url('assets/sigma-men.jpg') }}"  class="image card-img-top" alt="">
             <div class="card-header">
                 <div class="body">
                     <p class="">
-                        Bismillah, Saya Rizqi Nur Sya'ban, kelas XI RPL.
+                        Bismillah, Saya Rizqi Nur Sya'ban, kelas XI RPL(Rekayasa Perangkat Lunak).
                         peran saya dalam project ini sebagai seorang backend.
                     </p>
                 </div>
@@ -46,5 +46,4 @@ Profile
         </div>
     </div>
 </div>
-
 @endsection
