@@ -69,7 +69,7 @@ class AppController extends Controller
         $time_open = $request -> time_open;
         $price = $request -> price;
 
-        destinations::where("id",$id)->update([
+        destinations::where("id",$id) -> update([
             "name" => $name,
             "location" => $location,
             "details" => $details,
@@ -78,7 +78,7 @@ class AppController extends Controller
             "price" => $price
         ]);
         session()->flash("pesan","Data ".$name." berhasil diubah.");
-        return redirect("data-destinations/".$id."/edit");
+        return redirect("data-destinations");
     }
 }
 

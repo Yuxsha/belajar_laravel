@@ -30,5 +30,5 @@ Route::get("data-destinations/{id}/hapus",[AppController::class,"hapus_destinati
 Route::get("form-tambah",[AppController::class,"form_tambah"]);
 Route::post("tambah-destinations",[AppController::class,"proses_tambah_destinations"]);
 Route::get("data-destinations/{id}/edit",[AppController::class,"edit_destinations"]);
-Route::get("edit-destinations",[AppController::class,"proses_edit_destinations"]);
+Route::post("edit-destinations",[AppController::class,"proses_edit_destinations"]);
 

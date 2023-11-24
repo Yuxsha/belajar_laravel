@@ -1,11 +1,16 @@
-@extends("template")
+@extends("template2")
 
 @section("title1")
+Form edit destinations
+@endsection
+
+
+@section("title")
 Edit destinations form
 @endsection
 
 @section("content")
-<form action="{{ url('edit-destinations') }}" method="post" class="form mt-3 p-5 ">
+<form action="{{ url('edit-destinations') }}" method="post" class="form mx-5 mb-5 mt- px-5 pb-5 pt-2">
     @csrf
     <input type="hidden" name="id" value="{{ $destinations->id }}">
     <div class="mb-2 form-label">
@@ -14,7 +19,7 @@ Edit destinations form
                 Name :
             </b>
         </label>
-        <input type="text" class="form-control" value="{{ $destinations->name }}" required>
+        <input type="text" class="form-control" value="{{ $destinations->name }}" name="name" required>
     </div>
     <div class="form-label mb-2">
         <label for="location">
@@ -22,7 +27,7 @@ Edit destinations form
                 Location :
             </b>
         </label>
-        <input type="text" class="form-control" value="{{ $destinations->location }}" required>
+        <input type="text" class="form-control" value="{{ $destinations->location }}" name="location" required>
     </div>
     <div class="form-label">
         <label for="details">
@@ -40,7 +45,7 @@ Edit destinations form
                 Day open :
             </b>
         </label>
-        <input type="text" class="form-control" value="{{ $destinations->day_open }}" required>
+        <input type="text" class="form-control" value="{{ $destinations->day_open }}" name="day_open" required>
     </div>
     <div class="form-label">
         <label for="time_open">
@@ -48,7 +53,7 @@ Edit destinations form
                 Time open :
             </b>
         </label>
-        <input type="text" class="form-control" value="{{ $destinations->time_open }}" required>
+        <input type="text" class="form-control" value="{{ $destinations->time_open }}" name="time_open" required>
     </div>
     <div class="form-label">
         <label for="price">
@@ -56,10 +61,11 @@ Edit destinations form
                 Price : 
             </b>
         </label>
-        <input type="text" class="form-control" value="{{ $deestinations->price }}" required>
+        <input type="text" class="form-control" value="{{ $destinations->price }}" name="price" required>
     </div>
     <button type="submit" 
-        class="btn btn-success btn-md float-end mt-4 me-3 mb-5">
+        class="btn btn-primary
+        btn-md float-end mt-4 me-3 mb-5">
         Edit
     </button>
     <a href="{{ url('data-destinations') }}" 

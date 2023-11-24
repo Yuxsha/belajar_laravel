@@ -15,32 +15,39 @@ Home
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-        <img src="{{ url('assets/prambanan.jpg') }}" class="img d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-            <h1 class="text-center">Tempat wisata</h1>
-            <h5>Candi Prambanan</h5>
-        </div>
-        </div>
-        <div class="carousel-item">
-        <img src="{{ url('assets/keraton.jpg') }}" class="img d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-            <h1 class="text-center">Tempat wisata</h1>
-            <h5>Keraton kasepuhan Cirebon</h5>
-        </div>
+            <img src="{{ url('assets/prambanan.jpg') }}" class="img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-center">Tempat wisata</h1>
+                <h5>Candi Prambanan</h5>
+            </div>
         </div>
         <div class="carousel-item">
-        <img src="{{ url('assets/bali.jpg') }}" class="img d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-            <h1 class="text-center">Tempat wisata</h1>
-            <h5>Pulau Dewata Bali</h5>
-        </div>
+            <img src="{{ url('assets/keraton.jpg') }}" class="img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-center">Tempat wisata</h1>
+                <h5>Keraton kasepuhan Cirebon</h5>
+            </div>
         </div>
         <div class="carousel-item">
-        <img src="{{ url('assets/borobudur.jpeg') }}" class="img d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-            <h1 class="text-center">Tempat wisata</h1>
-            <h5>Candi Borobudur</h5>
+            <img src="{{ url('assets/bali.jpg') }}" class="img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-center">Tempat wisata</h1>
+                <h5>Pulau Dewata Bali</h5>
+            </div>
         </div>
+        <div class="carousel-item">
+            <img src="{{ url('assets/borobudur.jpeg') }}" class="img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-center">Tempat wisata</h1>
+                <h5>Candi Borobudur</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url('assets/.jpg') }}" class="img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-center">Tempat wisata</h1>
+                <h5></h5>
+            </div>
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

@@ -2,7 +2,7 @@
 
 @section("title")
 Destinations Data
-<a href="{{ url('form_tambah') }}" class="btn btn-success btn-md float-end me-4 mt-3">Add</a>
+<a href="{{ url('form-tambah') }}" class="btn btn-success btn-md float-end me-4 mt-3">Add</a>
 @endsection
 @section("title1")
 Destinations data

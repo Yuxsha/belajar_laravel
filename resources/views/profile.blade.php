@@ -5,7 +5,7 @@ Profile
 @endsection
 
 @section("content")
-<div class="row ms-5">
+<div class="row m-5">
     <div class="col-3">
         <div class="card shadow m-5" >
             <img src="{{ url('assets/sigma-male.jpg') }}"  class="image card-img-top" alt="">
@@ -26,7 +26,7 @@ Profile
                 <div class="body">
                     <p class="">
                         SMK  Informatika Al-Irsyad Al-Islamiyyah ini adalah tempat kami menimba ilmu, ilmu komputer, ilmu agama dan banyak lagi.
-                        SMK 
+                        SMK Informatika Al-irsyad Al-islamiyyah terletak di kota Cirebon, jawa barat. pada Jln.Perjuangan No.31. Terakreditasi A!
                     </p>
                 </div>
             </div>

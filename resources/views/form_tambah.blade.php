@@ -3,6 +3,9 @@
 @section("title")
 Add destinations form
 @endsection
+@section("title1")
+Form destinations
+@endsection
 
 @section("content1")
     <form action="{{ url('tambah-destinations') }}" method="post" class="form my-3 ms-4 mb-5 pb-5">
